@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基础布局 */
+html, body, #root { height: 100%; }
+body { @apply bg-agri-50 text-gray-800; }
+
+/* 可复用组件样式 */
+.btn { @apply inline-flex items-center justify-center px-3 py-2 rounded-xl border text-sm font-medium transition; }
+.btn-primary { @apply bg-agri-600 border-agri-600 text-white hover:bg-agri-700; }
+.btn-ghost { @apply border-gray-300 bg-white hover:bg-gray-50; }
+.card { @apply bg-white rounded-2xl shadow-md border border-gray-200; }
+.input { @apply w-full rounded-xl border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-agri-400; }
+.label { @apply text-sm text-gray-600 mb-1; }
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs border; }
